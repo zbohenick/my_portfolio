@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Portfolioz</title>
+      <title>My site Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +14,14 @@
   </head>
 
   <body>
+  <header id="main_navigation" class="clearfix">
+        <a href="index.html" class="name">Zach Bohenick</a>
+        <nav>
+        <%= link_to "Articles", posts_path %>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
     <%= yield %>
   </body>
 </html>
